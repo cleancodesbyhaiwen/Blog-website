@@ -1,0 +1,59 @@
+body{
+	background: url(../data/paris.jpg);
+	height: 1500px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* The navigation bar */
+.navbar {
+	overflow: hidden;
+	background-color: rgba(60, 86, 99, 0.3);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+	font-family: Sans-serif;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+#logo{
+	width: 16px;
+	height:16px;
+}
+
+.intro{
+    border-radius: 5px;
+    margin-left: auto;
+	margin-right: auto;
+    margin-top: 300px;
+    width: 30%;
+    background:linear-gradient(to bottom, rgba(34, 142, 192, 0.7), rgba(75, 120, 156, 0.7));
+    padding: 80px;
+	font-family: Cursive;
+	font-size: 30px;
+	box-shadow: 1px 1px 5px 8px rgb(47, 56, 58, 0.7);
+	text-shadow: 1px 1px;
+	transition: all 200ms ease;
+}
+
+.intro:hover{
+	box-shadow: 1px 1px 5px 12px rgb(47, 56, 58, 0.7);
+}

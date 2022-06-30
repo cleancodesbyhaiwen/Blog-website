@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Post Page</title>
+		<link rel = "stylesheet" href = "../styles/post.css">
+	</head>
+	<body>
+	<a href="/{{user_hash}}/feed"><image src="../data/logo.png" id="logo"></a>
+		<div class="post">
+		<div class="singlepost">
+			<a>TITLE: {{post[1]}}</a>
+            <hr>
+			<p>CONTENT: {{post[2]}}</p>
+            <hr>
+			<form method="post"  name="form">
+			<a>UP VOTE: {{post[3]}}</a>
+			<a>DOWN VOTE: {{post[4]}}</a>
+			<a id="datetime">   |   Created At: {{post[6]}}</a>
+			<a>   |   Created By: {{username}}</a>
+			</form>
+		</div>
+	</body>
+
+</html>

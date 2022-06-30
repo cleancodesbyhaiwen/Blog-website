@@ -1,0 +1,95 @@
+body{
+	background: url(../data/new.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* The navigation bar */
+.navbar {
+	overflow: hidden;
+	background-color: rgba(60, 86, 99, 0.3);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+	font-family: Sans-serif;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+#logo{
+	width: 16px;
+	height:16px;
+}
+
+#form{
+    margin-left: 30px;
+    margin-top: 50px;
+    border-style: none;
+}
+
+textarea{
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: Cursive;
+    width: 80%;
+}
+
+textarea:hover{
+    box-shadow: 1px 1px 5px 3px rgb(47, 56, 58, 0.7);
+}
+
+label{
+    font-family: Cursive;
+    font-size: 30px;
+}
+
+h1{
+    color: black;
+    margin-left: 30px;
+    margin-top: 120px;
+    font-family: Cursive;
+}
+
+#submit{
+    background: rgba(22, 65, 104, 0.3);
+    border-radius: 8px;
+    border-style: none;
+    font-size: 30px;
+    padding: 10px;
+    font-family: Cursive;
+    transition: all 500ms ease;
+    margin-left: 10px;
+}
+
+#submit:hover{
+    color: black;
+    background-color:rgba(216, 227, 236, 0.8);
+    box-shadow: 1px 1px 5px 5px rgb(47, 56, 58, 0.7);
+}
+
+#title{
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: Cursive;
+}
+
+#title:hover{
+    box-shadow: 1px 1px 5px 3px rgb(47, 56, 58, 0.7);
+}
+

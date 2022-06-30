@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Create Post</title>
+        <link rel="stylesheet" href="../styles/create.css">
+	</head>
+
+	<body>
+        <div class="navbar">
+            <a href="/{{user_hash}}/feed"><image src="../data/logo.png" id="logo"></a>
+            <a href="/{{user_hash}}/feed">Main Page</a>
+            <a href="/{{user_hash}}/aboutme">About Me</a>
+            <a href="/{{user_hash}}/contact">Contact Me</a>
+			<a href="/{{user_hash}}/create">Make a Post</a>
+            <a href="/{{user_hash}}/myposts">My Posts</a>
+        </div>
+
+        <h1>Making a Post for {{username}}</h1>
+	    <form action="/{{user_hash}}/create" method="POST" id="form">
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title" ><br><br>
+
+            <label for="content"></label>
+            <textarea type="text" id="content" name="content"></textarea>
+
+            <div id = "button">
+                <input type="submit" value="Post" id ="submit">
+            </div>
+	    </form>
+	</body>
+
+</html>

@@ -1,0 +1,74 @@
+html{
+    background: url("../data/4853433.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.vote{
+    background-color: chocolate;
+    border-radius: 10px;
+    color: white;
+    font-family: copperplate;
+    height: 40px;
+    font-style: bold;
+}
+
+#delete{
+    background-color: red;
+    border-radius: 10px;
+    font-style: bold;
+    position: absolute;
+    right: 40px;
+    bottom: auto;
+}
+
+
+
+.no_post{
+    font-family: copperplate;
+    font-size: 40px;
+}
+
+#logo{
+	width: 80px;
+	height:80px;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+#create{
+    position: absolute;
+    right: 30px;
+    background-color: chocolate;
+    border-radius: 10px;
+    height: 40px;
+    font-family: copperplate;
+    font-weight: bold;
+}
+
+#create_text{
+    color: white;
+}
+
+#header{
+    position: absolute;
+    left: auto;
+    right: auto;
+	font-size: 40px;
+	font-family: copperplate;
+    font-style: bold;
+    color: chocolate;
+}
+
+.singlepost{
+	border: 5px solid Chocolate;
+	border-radius: 20px;
+	margin: auto;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    word-wrap: break-word;
+}

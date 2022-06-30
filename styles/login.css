@@ -1,0 +1,127 @@
+body{
+	background: url(../data/paris.jpg);
+	height: 1500px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* The navigation bar */
+.navbar {
+	overflow: hidden;
+	background-color: rgba(60, 86, 99, 0.3);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+	font-family: Sans-serif;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+#logo{
+	width: 16px;
+	height:16px;
+}
+
+.login{
+    border-radius: 5px;
+    margin-left: auto;
+	margin-right: auto;
+    margin-top: 300px;
+    height: 300px;
+    width: 10%;
+    background:linear-gradient(to bottom, rgba(34, 142, 192, 0.7), rgba(75, 120, 156, 0.7));
+    padding: 80px;
+	box-shadow: 1px 1px 5px 12px rgb(47, 56, 58, 0.7);
+}
+
+#submit {
+    margin-top: 50px;
+	background-color: rgb(192, 213, 214);
+	border-radius: 5px;
+	color: rgb(75, 81, 81);
+	position: relative;
+	width: 100%;
+	padding: 8px;
+	font-size: 20px;
+	font-family: Sans-serif;
+	border-style:none;
+	font-weight:800;
+	transition: all 500ms ease;
+	margin-bottom: 20px;
+}
+
+#submit:hover{
+	color: rgb(41, 53, 52);
+	background-color:rgb(204, 241, 241);
+	box-shadow: 1px 1px 5px 8px rgb(47, 56, 58, 0.7);
+}
+
+input[type='text']{
+    border-radius: 5px;
+	position: relative;
+    height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 20px;
+	width: 100%;
+	font-family: "MOnaco";
+    font-size: 30px;
+	border-style:none;
+}
+
+input[type='text']:hover{
+	box-shadow: 1px 1px 5px 8px rgb(47, 56, 58, 0.7);
+}
+
+input[type='password']{
+    border-radius: 5px;
+	position: relative;
+    height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 40px;
+	width: 100%;
+	font-family: "MOnaco";
+    font-size: 30px;
+	border-style:none;
+}
+
+input[type='password']:hover{
+	box-shadow: 1px 1px 5px 8px rgb(47, 56, 58, 0.7);
+}
+
+#register{
+    font-family: Sans-serif;
+	text-align: center;
+    color: black;
+}
+
+
+p[id=error]{
+	margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+	position: relative;
+	top: 60px;
+    height: 30px;
+	font-family: Sans-serif;
+	text-align: center;
+    font-size: 20px;
+}

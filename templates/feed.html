@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Feed Page</title>
+		<link rel = "stylesheet" href = "../styles/feed.css">
+	</head>
+
+	<body>
+
+		<div class="navbar">
+            <a href="/{{user_hash}}/feed"><image src="../data/logo.png" id="logo"></a>
+			<a href="/{{user_hash}}/feed">Main Page</a>
+			<a href="/{{user_hash}}/aboutme">About Me</a>
+			<a href="/{{user_hash}}/contact">Contact Me</a>
+			<a href="/{{user_hash}}/create">Make A Post</a>
+			<a href="/{{user_hash}}/myposts">My Posts</a>
+        </div>
+
+		<div class="post">
+			{% for post in posts %}
+			<div class="singlepost">
+				<a id="title" href="/posts/{{post[0]}}">{{post[1]}}</a>
+				<div >
+					<p id="content">{{post[2]}}</p>
+				</div>
+				<form method="post"  name="form">
+					<input type="hidden" value="{{post[0]}}" name="post_id"></input>
+					<input type="submit" class="vote" name="up" value= "UP:{{post[3]}}"></input>
+					<input type="submit" class="vote" name="down" value="DOWN:{{post[4]}}"></input>
+				</form>
+				<div class="info">
+					<a id="datetime">      Created at: {{post[6]}}</a>
+					<a>   |   Author: {{post[7]}}</a>
+					<a href="/posts/{{post[0]}}">   |   Post ID: {{post[0]}}</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="pagnition">
+			{{pagination.links}}
+		</div>
+	
+	</body>
+
+</html>
