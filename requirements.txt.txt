@@ -1,3 +1,0 @@
-flask
-sqlite3
-flask_paginate
